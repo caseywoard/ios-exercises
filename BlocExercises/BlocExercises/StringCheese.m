@@ -12,13 +12,19 @@
 
 - (NSString *) favoriteCheeseStringWithCheese:(NSString *)cheeseName {
     /* WORK HERE */
-    return nil;
+    NSString *realCheeseName = cheeseName;
+    NSString *fav = [NSString stringWithFormat:@"My favorite cheese is %@", realCheeseName];
+    return fav;
 }
 
 - (NSString *) cheeseNameWithoutCheeseSuffix:(NSString *)cheeseName {
     /* WORK HERE */
-    return nil;
+    // I believe this wasn't the intended method to use for this checkpoint.
+    return cheeseName = [cheeseName stringByReplacingOccurrencesOfString:@" cheese"
+                                                           withString:@""];
 }
+
+
 
 - (NSString *) numberOfCheesesStringWithCheeseCount:(NSUInteger)cheeseCount {
     if (cheeseCount == 1) {
