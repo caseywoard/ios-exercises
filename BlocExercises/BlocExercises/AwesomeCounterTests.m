@@ -31,9 +31,11 @@
 }
 
 - (void)testThatStringWorksAscending {
-    NSInteger lowNumber = -7;
+    NSInteger lowNumber = -7; //Bloc
+    //NSInteger lowNumber = 2; //Casey
     NSInteger highNumber = 13;
-    NSString *expectedString = @"-7-6-5-4-3-2-1012345678910111213";
+    NSString *expectedString = @"-7-6-5-4-3-2-1012345678910111213"; //Bloc
+    //NSString *expectedString = @"2345678910111213";//casey
     NSString *actualString = [self.counter stringWithNumbersBetweenNumber:lowNumber andOtherNumber:highNumber];
     XCTAssertEqualObjects(expectedString, actualString, @"strings differed");
 }
