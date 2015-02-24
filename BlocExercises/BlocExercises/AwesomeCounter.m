@@ -13,13 +13,13 @@
 - (NSString *) stringWithNumbersBetweenNumber:(NSInteger)number andOtherNumber: (NSInteger)otherNumber {
     /* WORK HERE */
     
-    
+    //NSInteger *firstNumber = &number;
      NSMutableString *str = [NSMutableString stringWithString: @""];
     //NSMutableString *str = [[NSMutableString alloc] init];
     //NSMutableString *str = [NSMutableString string];
-    for (NSUInteger number; number <= otherNumber; number++) {
+    for (NSInteger number; number <= otherNumber; number++) {
     
-    [str appendFormat:@"%ld", (long)number];
+    [str appendFormat:@"%ld", number];
     //NSString *str = [NSString stringWithFormat:@"%d", number];
     }
    
