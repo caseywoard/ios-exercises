@@ -25,19 +25,19 @@
 - (NSArray *) alphabeticallySortedStarTrekCharactersFromArray:(NSArray *)characterArray {
     /* WORK HERE */
     
-    NSMutableArray *myMutableArray = [NSMutableArray arrayWithArray:characterArray];
+    //NSMutableArray *myMutableArray = [NSMutableArray arrayWithArray:characterArray];
     NSSortDescriptor *sortStarTrekArray = [[NSSortDescriptor alloc] initWithKey:nil ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)];
-    [myMutableArray sortUsingDescriptors:@[sortStarTrekArray]];
-    return myMutableArray; //I didn't think this would work because I'm returning an NSMutableArray when I thought it expected a regular NSArray
+    return [characterArray sortedArrayUsingDescriptors:@[sortStarTrekArray]];
+    //return myMutableArray; //I didn't think this would work because I'm returning an NSMutableArray when I thought it expected a regular NSArray
     
 }
 
 - (BOOL) characterArrayContainsWorf:(NSArray *)characterArray {
     /* WORK HERE */
-    NSMutableArray *myMutableArray = [NSMutableArray arrayWithArray:characterArray];
+    //NSMutableArray *myMutableArray = [NSMutableArray arrayWithArray:characterArray];
     NSPredicate *containsWorf = [NSPredicate predicateWithFormat:@"SELF CONTAINS 'worf'"];
-    [myMutableArray filterUsingPredicate:containsWorf];
-    return myMutableArray;
+    return[characterArray filteredArrayUsingPredicate:containsWorf];
+    //return myMutableArray;
 }
 
 @end
