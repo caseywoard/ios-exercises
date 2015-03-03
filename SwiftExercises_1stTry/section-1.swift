@@ -76,19 +76,22 @@ let characters = [worf, picard]
 func favoriteDrinksArrayForCharacters(characters:Array<Dictionary<String, String>>) -> Array<String> {
     // return an array of favorite drinks, like ["prune juice", "tea, Earl Grey, hot"]
     // WORK HERE
-    var newArray : [String] = []
-    for character in characters {
-        if character["favorite drink"] != nil {
-            newArray.append(character["favorite drink"]!)
-            //newArray = character["favorite drink"]
-        }
+    for stuff in characters {
+        println(stuff)
     }
     
-    return newArray
+    var dog = "woof"
+    
+    
+    
+    
+    return []//favDrinks
 }
 
 
-favoriteDrinksArrayForCharacters(characters)
+let favoriteDrinks = favoriteDrinksArrayForCharacters(characters)
+
+favoriteDrinks
 
 /*
 
@@ -102,15 +105,13 @@ let strings = ["milk", "eggs", "bread", "challah"]
 
 // WORK HERE - make your function and pass `strings` in
 
-
-func myFunc(strings:Array<String>) -> String {
-  var newString = ""
-   for item in strings {
-     newString += "\(item);"
-    }
-   return newString
-}
-
+func myFunc(strings: Array<String>) -> String {
+    var newString = ""
+   // for (value) item in strings {
+     //   newString + \(value) + ;
+  //  }
+   //return newString
+//}
 
 myFunc(strings)
 
@@ -124,6 +125,6 @@ Closures
 */
 
 let cerealArray = ["Golden Grahams", "Cheerios", "Trix", "Cap'n Crunch OOPS! All Berries", "Cookie Crisp"]
-//on the ceral array .sort
+
 // Use a closure to sort this array alphabetically
 // WORK HERE
