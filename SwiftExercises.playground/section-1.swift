@@ -127,3 +127,16 @@ let cerealArray = ["Golden Grahams", "Cheerios", "Trix", "Cap'n Crunch OOPS! All
 //on the ceral array .sort
 // Use a closure to sort this array alphabetically
 // WORK HERE
+
+let cerealArrayGetsSorted = sorted(cerealArray, <)
+
+
+
+
+
+
+
+
+
+
+
